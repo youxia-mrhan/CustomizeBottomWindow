@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ju Bao Pen</string>
+    <string name="default_value">--</string>
+    <string name="search">搜索</string>
+    <string name="more">更多</string>
+    <string name="food">美食</string>
+</resources>

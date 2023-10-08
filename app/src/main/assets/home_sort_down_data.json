@@ -1,0 +1,505 @@
+{
+  "all_shopping_list": [{
+    "all_shopping_id": 0,
+    "all_shopping_title": "商区",
+    "all_shopping_child": [{
+      "all_shopping_child_id": 0,
+      "all_shopping_child_title": "附近",
+      "all_shopping_child_detail": [{
+        "location_id": 0,
+        "location_distance": "附近"
+      }, {
+        "location_id": 1,
+        "location_distance": "500m"
+      },
+        {
+          "location_id": 2,
+          "location_distance": "1km"
+        },
+        {
+          "location_id": 3,
+          "location_distance": "3km"
+        },
+        {
+          "location_id": 4,
+          "location_distance": "5km"
+        },
+        {
+          "location_id": 5,
+          "location_distance": "10km"
+        }
+      ]
+    },
+      {
+        "all_shopping_child_id": 1,
+        "all_shopping_child_title": "全部商区",
+        "all_shopping_child_detail": [{
+          "location_id": 0,
+          "location_distance": "全部商区"
+        }, {
+          "location_id": 1,
+          "location_distance": "200m"
+        },
+          {
+            "location_id": 2,
+            "location_distance": "1km"
+          },
+          {
+            "location_id": 3,
+            "location_distance": "3km"
+          },
+          {
+            "location_id": 4,
+            "location_distance": "15km"
+          },
+          {
+            "location_id": 5,
+            "location_distance": "10km"
+          }
+        ]
+      },
+      {
+        "all_shopping_child_id": 2,
+        "all_shopping_child_title": "西湖区",
+        "all_shopping_child_detail": [{
+          "location_id": 0,
+          "location_distance": "西湖区"
+        }, {
+          "location_id": 1,
+          "location_distance": "100m"
+        },
+          {
+            "location_id": 2,
+            "location_distance": "1km"
+          },
+          {
+            "location_id": 3,
+            "location_distance": "3km"
+          },
+          {
+            "location_id": 4,
+            "location_distance": "5km"
+          },
+          {
+            "location_id": 5,
+            "location_distance": "20km"
+          }
+        ]
+      },
+      {
+        "all_shopping_child_id": 3,
+        "all_shopping_child_title": "拱墅区",
+        "all_shopping_child_detail": [{
+          "location_id": 0,
+          "location_distance": "拱墅区"
+        }, {
+          "location_id": 1,
+          "location_distance": "700m"
+        },
+          {
+            "location_id": 2,
+            "location_distance": "1km"
+          },
+          {
+            "location_id": 3,
+            "location_distance": "3km"
+          },
+          {
+            "location_id": 4,
+            "location_distance": "6km"
+          },
+          {
+            "location_id": 5,
+            "location_distance": "10km"
+          }
+        ]
+      },
+      {
+        "all_shopping_child_id": 4,
+        "all_shopping_child_title": "萧山区",
+        "all_shopping_child_detail": [{
+          "location_id": 0,
+          "location_distance": "萧山区"
+        }, {
+          "location_id": 1,
+          "location_distance": "150m"
+        },
+          {
+            "location_id": 2,
+            "location_distance": "1km"
+          },
+          {
+            "location_id": 3,
+            "location_distance": "3km"
+          },
+          {
+            "location_id": 4,
+            "location_distance": "5km"
+          },
+          {
+            "location_id": 5,
+            "location_distance": "12km"
+          }
+        ]
+      },
+      {
+        "all_shopping_child_id": 5,
+        "all_shopping_child_title": "江干区",
+        "all_shopping_child_detail": [{
+          "location_id": 0,
+          "location_distance": "江干区"
+        }, {
+          "location_id": 1,
+          "location_distance": "550m"
+        },
+          {
+            "location_id": 2,
+            "location_distance": "1km"
+          },
+          {
+            "location_id": 3,
+            "location_distance": "3km"
+          },
+          {
+            "location_id": 4,
+            "location_distance": "5km"
+          },
+          {
+            "location_id": 5,
+            "location_distance": "40km"
+          }
+        ]
+      },
+      {
+        "all_shopping_child_id": 6,
+        "all_shopping_child_title": "滨江区",
+        "all_shopping_child_detail": [{
+          "location_id": 0,
+          "location_distance": "滨江区"
+        }, {
+          "location_id": 1,
+          "location_distance": "750m"
+        },
+          {
+            "location_id": 2,
+            "location_distance": "1km"
+          },
+          {
+            "location_id": 3,
+            "location_distance": "8km"
+          },
+          {
+            "location_id": 4,
+            "location_distance": "5km"
+          },
+          {
+            "location_id": 5,
+            "location_distance": "12km"
+          }
+        ]
+      }
+    ]
+  },
+    {
+      "all_shopping_id": 1,
+      "all_shopping_title": "地铁",
+      "all_shopping_child": [{
+        "all_shopping_child_id": 0,
+        "all_shopping_child_title": "全城",
+        "all_shopping_child_detail": [{
+          "location_id": 0,
+          "location_distance": "滨康路"
+        },
+          {
+            "location_id": 1,
+            "location_distance": "滨河路"
+          },
+          {
+            "location_id": 2,
+            "location_distance": "婺江路"
+          },
+          {
+            "location_id": 3,
+            "location_distance": "西兴"
+          },
+          {
+            "location_id": 4,
+            "location_distance": "湘湖"
+          }
+        ]
+      },
+        {
+          "all_shopping_child_id": 1,
+          "all_shopping_child_title": "1号线",
+          "all_shopping_child_detail": [{
+            "location_id": 0,
+            "location_distance": "湘湖"
+          },
+            {
+              "location_id": 1,
+              "location_distance": "滨康路"
+            },
+            {
+              "location_id": 2,
+              "location_distance": "西兴"
+            },
+            {
+              "location_id": 3,
+              "location_distance": "滨河路"
+            },
+            {
+              "location_id": 4,
+              "location_distance": "江陵路"
+            },
+            {
+              "location_id": 5,
+              "location_distance": "近江"
+            },
+            {
+              "location_id": 6,
+              "location_distance": "婺江路"
+            }
+          ]
+        },
+        {
+          "all_shopping_child_id": 2,
+          "all_shopping_child_title": "2号线",
+          "all_shopping_child_detail": [{
+            "location_id": 0,
+            "location_distance": "滨康路"
+          },
+            {
+              "location_id": 1,
+              "location_distance": "湘湖"
+            },
+            {
+              "location_id": 2,
+              "location_distance": "滨河路"
+            },
+            {
+              "location_id": 3,
+              "location_distance": "西兴"
+            },
+            {
+              "location_id": 4,
+              "location_distance": "江陵路"
+            },
+            {
+              "location_id": 5,
+              "location_distance": "婺江路"
+            },
+            {
+              "location_id": 6,
+              "location_distance": "近江"
+            }
+          ]
+        },
+        {
+          "all_shopping_child_id": 3,
+          "all_shopping_child_title": "4号线",
+          "all_shopping_child_detail": [{
+            "location_id": 0,
+            "location_distance": "滨河路"
+          },
+            {
+              "location_id": 1,
+              "location_distance": "滨康路"
+            },
+            {
+              "location_id": 2,
+              "location_distance": "湘湖"
+            },
+            {
+              "location_id": 3,
+              "location_distance": "西兴"
+            },
+            {
+              "location_id": 4,
+              "location_distance": "江陵路"
+            },
+            {
+              "location_id": 5,
+              "location_distance": "婺江路"
+            },
+            {
+              "location_id": 6,
+              "location_distance": "近江"
+            }
+          ]
+        }, {
+          "all_shopping_child_id": 4,
+          "all_shopping_child_title": "5号线",
+          "all_shopping_child_detail": [{
+            "location_id": 0,
+            "location_distance": "婺江路"
+          },
+            {
+              "location_id": 1,
+              "location_distance": "近江"
+            },
+            {
+              "location_id": 2,
+              "location_distance": "滨河路"
+            },
+            {
+              "location_id": 3,
+              "location_distance": "江陵路"
+            },
+            {
+              "location_id": 4,
+              "location_distance": "西兴"
+            },
+            {
+              "location_id": 5,
+              "location_distance": "湘湖"
+            },
+            {
+              "location_id": 6,
+              "location_distance": "滨康路"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "all_sort_list": [{
+    "all_sort_id": 0,
+    "all_sort_title": "全部分类",
+    "all_sort_child": [{
+      "all_sort_child_id": 0,
+      "all_sort_child_title": "全部分类"
+    }, {
+      "all_sort_child_id": 1,
+      "all_sort_child_title": "小吃快餐"
+    },
+      {
+        "all_sort_child_id": 2,
+        "all_sort_child_title": "西餐"
+      },
+      {
+        "all_sort_child_id": 3,
+        "all_sort_child_title": "韩国料理"
+      },
+      {
+        "all_sort_child_id": 4,
+        "all_sort_child_title": "火锅"
+      },
+      {
+        "all_sort_child_id": 5,
+        "all_sort_child_title": "烧烤"
+      },
+      {
+        "all_sort_child_id": 6,
+        "all_sort_child_title": "日本料理"
+      }, {
+        "all_sort_child_id": 7,
+        "all_sort_child_title": "特色中餐"
+      },
+      {
+        "all_sort_child_id": 8,
+        "all_sort_child_title": "其它"
+      }
+    ]
+  },
+    {
+      "all_sort_id": 1,
+      "all_sort_title": "美食",
+      "all_sort_child": [{
+        "all_sort_child_id": 0,
+        "all_sort_child_title": "全部分类"
+      }, {
+        "all_sort_child_id": 1,
+        "all_sort_child_title": "韩国料理"
+      },
+        {
+          "all_sort_child_id": 2,
+          "all_sort_child_title": "火锅"
+        },
+        {
+          "all_sort_child_id": 3,
+          "all_sort_child_title": "小吃快餐"
+        },
+        {
+          "all_sort_child_id": 4,
+          "all_sort_child_title": "西餐"
+        },
+        {
+          "all_sort_child_id": 5,
+          "all_sort_child_title": "日本料理"
+        },
+        {
+          "all_sort_child_id": 6,
+          "all_sort_child_title": "烧烤"
+        }, {
+          "all_sort_child_id": 7,
+          "all_sort_child_title": "特色中餐"
+        },
+        {
+          "all_sort_child_id": 8,
+          "all_sort_child_title": "其它"
+        }
+      ]
+    }, {
+      "all_sort_id": 2,
+      "all_sort_title": "饮品甜品",
+      "all_sort_child": [{
+        "all_sort_child_id": 0,
+        "all_sort_child_title": "全部分类"
+      }, {
+        "all_sort_child_id": 1,
+        "all_sort_child_title": "火锅"
+      },
+        {
+          "all_sort_child_id": 2,
+          "all_sort_child_title": "韩国料理"
+        },
+        {
+          "all_sort_child_id": 3,
+          "all_sort_child_title": "西餐"
+        },
+        {
+          "all_sort_child_id": 4,
+          "all_sort_child_title": "小吃快餐"
+        },
+        {
+          "all_sort_child_id": 5,
+          "all_sort_child_title": "烧烤"
+        },
+        {
+          "all_sort_child_id": 6,
+          "all_sort_child_title": "特色中餐"
+        }, {
+          "all_sort_child_id": 7,
+          "all_sort_child_title": "日本料理"
+        },
+        {
+          "all_sort_child_id": 8,
+          "all_sort_child_title": "其它"
+        }
+      ]
+    }
+  ],
+
+  "recommend_sort_list": [{
+    "recommend_sort_id": 0,
+    "recommend_sort_title": "推荐排序"
+  },
+    {
+      "recommend_sort_id": 1,
+      "recommend_sort_title": "销量排序"
+    },
+    {
+      "recommend_sort_id": 2,
+      "recommend_sort_title": "距离排序"
+    },
+    {
+      "recommend_sort_id": 3,
+      "recommend_sort_title": "价格从高到低"
+    },
+    {
+      "recommend_sort_id": 4,
+      "recommend_sort_title": "价格从低到高"
+    }
+  ]
+}
