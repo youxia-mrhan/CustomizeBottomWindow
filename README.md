@@ -39,6 +39,8 @@ public void showAsDropDown(View anchor, int xoff, int yoff, int gravity) {
 }
 ```
 
+
+
 4、如果先dismiss再添加，属于重新创建布局，切换生硬，会出现闪烁，影响用户体验，就像这样；
 ![use_popup_window.gif](use_popup_window.gif)
 
