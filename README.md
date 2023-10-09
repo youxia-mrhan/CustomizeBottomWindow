@@ -6,8 +6,11 @@ demo东西比较多，是从自己项目里摘录出来的，扩展了MagicIndic
 核心类：AffiliatedBottomWindow
 
 
+
 # 1.0 效果图
 ![use_affiliated_bottom_window.gif](use_affiliated_bottom_window.gif)
+
+
 
 # 2、前言
 1、页面由 MagicIndicator + ViewPager2 + Fragment 实现；
@@ -42,6 +45,8 @@ public void showAsDropDown(View anchor, int xoff, int yoff, int gravity) {
 那就没办法了，自己实现；
 
 观摩PopupWindow源码发现它是基于windowManager实现的，照葫芦画瓢，自定义一个
+
+
 
 # 3、自定义下拉框
 
