@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 
 import com.example.myapplication.R;
 import com.example.myapplication.base.DownBaseView;
-import com.example.myapplication.bean.SortDownBean;
+import com.example.myapplication.bean.SortWindowBean;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class RecommendSortDownHo extends DownBaseView {
         super(context);
     }
 
-    private List<SortDownBean.RecommendSortListDTO> recommendSortList;
+    private List<SortWindowBean.RecommendSortListDTO> recommendSortList;
 
     private LinearLayout recommendSortSelectItemList;
 
@@ -58,12 +58,12 @@ public class RecommendSortDownHo extends DownBaseView {
     }
 
     // 悬浮框内容：推荐排序
-    public View getRecommendSortFilter(SortDownBean sortDownBean) {
+    public View getRecommendSortFilter(SortWindowBean sortWindowBean) {
 
         View recommendSortFilter = View.inflate(getContext(), R.layout.widget_recommend_sort_filter_ho, null);
 
         recommendSortSelectItemList = recommendSortFilter.findViewById(R.id.select_item_list);
-        recommendSortList = sortDownBean.getRecommendSortList();
+        recommendSortList = sortWindowBean.getRecommendSortList();
 
         initSelected();
 
@@ -81,7 +81,7 @@ public class RecommendSortDownHo extends DownBaseView {
             recommendSortSelectItemList.addView(sortDownText);
 
             int finalI = i;
-            sortDownText.setOnClickListener(new OnClickListener() {
+            sortDownText.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     updateRecommendSortState(finalI);
@@ -112,16 +112,16 @@ public class RecommendSortDownHo extends DownBaseView {
     }
 
     // 选中
-    private void selectedItem(SortDownBean.RecommendSortListDTO selected) {
+    private void selectedItem(SortWindowBean.RecommendSortListDTO selected) {
         // 循环查找是否存在，如果存在不执行，不存在 清除原来所有选项
         // 加入一级选项
 
-        SortDownBean.RecommendSortListDTO s = selected;
+        SortWindowBean.RecommendSortListDTO s = selected;
 
         boolean isExits = false;
         for (int i = 0; i < selectedItems.size(); i++) {
-            if (selectedItems.get(i) instanceof SortDownBean.RecommendSortListDTO) {
-                SortDownBean.RecommendSortListDTO s2 = (SortDownBean.RecommendSortListDTO) selectedItems.get(i);
+            if (selectedItems.get(i) instanceof SortWindowBean.RecommendSortListDTO) {
+                SortWindowBean.RecommendSortListDTO s2 = (SortWindowBean.RecommendSortListDTO) selectedItems.get(i);
                 if (s.getRecommendSortId() == s2.getRecommendSortId()) {
                     isExits = true;
                 }
@@ -142,7 +142,7 @@ public class RecommendSortDownHo extends DownBaseView {
     // 初始化
     private void initSelected() {
 
-        SortDownBean.RecommendSortListDTO selected;
+        SortWindowBean.RecommendSortListDTO selected;
         if (recommendSortList.size() > 0) {
             // 选中的选择
             selected = recommendSortList.get(0);

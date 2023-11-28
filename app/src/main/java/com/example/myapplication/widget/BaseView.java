@@ -24,7 +24,7 @@ public class BaseView extends FrameLayout {
             @Override
             public void onGlobalLayout() {
                 if (!initFlag) {
-                    initData();
+                    fistInit();
                     initFlag = true;
                 }
             }
@@ -32,6 +32,6 @@ public class BaseView extends FrameLayout {
     }
 
     // 只执行一次
-    public void initData() {}
+    public void fistInit() {}
 
 }

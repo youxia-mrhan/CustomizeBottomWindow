@@ -7,8 +7,9 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.myapplication.bean.SortDownBean;
+import com.example.myapplication.bean.SortWindowBean;
 import com.example.myapplication.databinding.FragmentRecommendSortBinding;
+import com.example.myapplication.ui.activity.SortListActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,7 @@ import java.util.List;
 /**
  * 推荐排序
  */
-public class RecommendSortFragment extends Fragment {
+public class RecommendSortFragment extends Fragment implements SortListActivity.OptionCallback {
 
     private FragmentRecommendSortBinding binding;
 
@@ -30,23 +31,16 @@ public class RecommendSortFragment extends Fragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        logSelected_2(selectedItems);
-    }
-
-    public void post(List<Object> params) {
-        selectedItems = params;
-        if (binding != null) {
-            logSelected_2(selectedItems);
-        }
+    public void updateList(List<Object> params) {
+        this.selectedItems = params;
+        logSelected_2(params);
     }
 
     private void logSelected_2(List<Object> selectedItems) {
         StringBuilder str = new StringBuilder();
         for (int i = 0; i < selectedItems.size(); i++) {
-            if (selectedItems.get(i) instanceof SortDownBean.RecommendSortListDTO) {
-                SortDownBean.RecommendSortListDTO s = (SortDownBean.RecommendSortListDTO) selectedItems.get(i);
+            if (selectedItems.get(i) instanceof SortWindowBean.RecommendSortListDTO) {
+                SortWindowBean.RecommendSortListDTO s = (SortWindowBean.RecommendSortListDTO) selectedItems.get(i);
                 str.append("---" + s.getRecommendSortId() + "---" + s.getRecommendSortTitle() + "---");
             }
         }

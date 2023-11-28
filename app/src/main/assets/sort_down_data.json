@@ -1,11 +1,11 @@
 {
-  "all_shopping_list": [{
-    "all_shopping_id": 0,
-    "all_shopping_title": "商区",
-    "all_shopping_child": [{
-      "all_shopping_child_id": 0,
-      "all_shopping_child_title": "附近",
-      "all_shopping_child_detail": [{
+  "all_store_list": [{
+    "all_store_id": 0,
+    "all_store_title": "商区",
+    "all_store_child": [{
+      "all_store_child_id": 0,
+      "all_store_child_title": "附近",
+      "all_store_child_detail": [{
         "location_id": 0,
         "location_distance": "附近"
       }, {
@@ -31,9 +31,9 @@
       ]
     },
       {
-        "all_shopping_child_id": 1,
-        "all_shopping_child_title": "全部商区",
-        "all_shopping_child_detail": [{
+        "all_store_child_id": 1,
+        "all_store_child_title": "全部商区",
+        "all_store_child_detail": [{
           "location_id": 0,
           "location_distance": "全部商区"
         }, {
@@ -59,9 +59,9 @@
         ]
       },
       {
-        "all_shopping_child_id": 2,
-        "all_shopping_child_title": "西湖区",
-        "all_shopping_child_detail": [{
+        "all_store_child_id": 2,
+        "all_store_child_title": "西湖区",
+        "all_store_child_detail": [{
           "location_id": 0,
           "location_distance": "西湖区"
         }, {
@@ -87,9 +87,9 @@
         ]
       },
       {
-        "all_shopping_child_id": 3,
-        "all_shopping_child_title": "拱墅区",
-        "all_shopping_child_detail": [{
+        "all_store_child_id": 3,
+        "all_store_child_title": "拱墅区",
+        "all_store_child_detail": [{
           "location_id": 0,
           "location_distance": "拱墅区"
         }, {
@@ -115,9 +115,9 @@
         ]
       },
       {
-        "all_shopping_child_id": 4,
-        "all_shopping_child_title": "萧山区",
-        "all_shopping_child_detail": [{
+        "all_store_child_id": 4,
+        "all_store_child_title": "萧山区",
+        "all_store_child_detail": [{
           "location_id": 0,
           "location_distance": "萧山区"
         }, {
@@ -143,9 +143,9 @@
         ]
       },
       {
-        "all_shopping_child_id": 5,
-        "all_shopping_child_title": "江干区",
-        "all_shopping_child_detail": [{
+        "all_store_child_id": 5,
+        "all_store_child_title": "江干区",
+        "all_store_child_detail": [{
           "location_id": 0,
           "location_distance": "江干区"
         }, {
@@ -171,9 +171,9 @@
         ]
       },
       {
-        "all_shopping_child_id": 6,
-        "all_shopping_child_title": "滨江区",
-        "all_shopping_child_detail": [{
+        "all_store_child_id": 6,
+        "all_store_child_title": "滨江区",
+        "all_store_child_detail": [{
           "location_id": 0,
           "location_distance": "滨江区"
         }, {
@@ -201,12 +201,12 @@
     ]
   },
     {
-      "all_shopping_id": 1,
-      "all_shopping_title": "地铁",
-      "all_shopping_child": [{
-        "all_shopping_child_id": 0,
-        "all_shopping_child_title": "全城",
-        "all_shopping_child_detail": [{
+      "all_store_id": 1,
+      "all_store_title": "地铁",
+      "all_store_child": [{
+        "all_store_child_id": 0,
+        "all_store_child_title": "全城",
+        "all_store_child_detail": [{
           "location_id": 0,
           "location_distance": "滨康路"
         },
@@ -229,9 +229,9 @@
         ]
       },
         {
-          "all_shopping_child_id": 1,
-          "all_shopping_child_title": "1号线",
-          "all_shopping_child_detail": [{
+          "all_store_child_id": 1,
+          "all_store_child_title": "1号线",
+          "all_store_child_detail": [{
             "location_id": 0,
             "location_distance": "湘湖"
           },
@@ -262,9 +262,9 @@
           ]
         },
         {
-          "all_shopping_child_id": 2,
-          "all_shopping_child_title": "2号线",
-          "all_shopping_child_detail": [{
+          "all_store_child_id": 2,
+          "all_store_child_title": "2号线",
+          "all_store_child_detail": [{
             "location_id": 0,
             "location_distance": "滨康路"
           },
@@ -295,9 +295,9 @@
           ]
         },
         {
-          "all_shopping_child_id": 3,
-          "all_shopping_child_title": "4号线",
-          "all_shopping_child_detail": [{
+          "all_store_child_id": 3,
+          "all_store_child_title": "4号线",
+          "all_store_child_detail": [{
             "location_id": 0,
             "location_distance": "滨河路"
           },
@@ -327,9 +327,9 @@
             }
           ]
         }, {
-          "all_shopping_child_id": 4,
-          "all_shopping_child_title": "5号线",
-          "all_shopping_child_detail": [{
+          "all_store_child_id": 4,
+          "all_store_child_title": "5号线",
+          "all_store_child_detail": [{
             "location_id": 0,
             "location_distance": "婺江路"
           },

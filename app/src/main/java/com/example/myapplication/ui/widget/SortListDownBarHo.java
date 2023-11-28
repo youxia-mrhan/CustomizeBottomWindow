@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.myapplication.R;
-import com.example.myapplication.bean.SortDownBean;
+import com.example.myapplication.bean.SortWindowBean;
 import com.example.myapplication.common.AffiliatedBottomWindow;
 import com.example.myapplication.ext.CommonNavigatorEx;
 import com.example.myapplication.ext.SimplePagerTitleViewIconHo;
@@ -27,6 +27,7 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.Li
 
 import java.util.List;
 
+
 /**
  * 分类列表Bar
  */
@@ -39,7 +40,7 @@ public class SortListDownBarHo extends BaseView {
     private List<String> tabs;
 
     // 下拉框的数据
-    private SortDownBean sortDownBean;
+    private SortWindowBean sortWindowBean;
 
     // 传给外部回调
     private SortBarItemOnClick sortBarItemOnClick;
@@ -50,8 +51,8 @@ public class SortListDownBarHo extends BaseView {
     private AffiliatedBottomWindow bottomWindow;
 
     // 下拉框内容：全部商区
-    private AllShoppingDownHo allShoppingDownHo;
-    private View allShoppingFilter;
+    private AllStoreDownHo allStoreDownHo;
+    private View allStoreFilter;
 
 
     // 下拉框内容：全部分类
@@ -80,12 +81,12 @@ public class SortListDownBarHo extends BaseView {
         this.sortBarItemOnClick = sortBarItemOnClick;
     }
 
-    public void setSortDownBean(SortDownBean sortDownBean) {
-        this.sortDownBean = sortDownBean;
+    public void setSortDownBean(SortWindowBean sortWindowBean) {
+        this.sortWindowBean = sortWindowBean;
     }
 
     @Override
-    public void initData() {
+    public void fistInit() {
         ConstraintLayout filterContainerRoot = (ConstraintLayout) View.inflate(getContext(), R.layout.widget_sort_filter_container_ho, null);
         FrameLayout filterContainer = filterContainerRoot.findViewById(R.id.filter_container);
         filterContainer.setLayoutTransition(MAnimatorUtils.mLayoutTransition(500));
@@ -98,7 +99,7 @@ public class SortListDownBarHo extends BaseView {
                 true);
 
         View mask = filterContainerRoot.findViewById(R.id.mask);
-        mask.setOnClickListener(new OnClickListener() {
+        mask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 bottomWindowDismiss();
@@ -106,18 +107,18 @@ public class SortListDownBarHo extends BaseView {
         });
 
         // 悬浮框内容：全部商区
-        allShoppingDownHo = new AllShoppingDownHo(getContext());
-        allShoppingFilter = allShoppingDownHo.getAllShoppingFilter(sortDownBean);
-        allShoppingDownHo.setShoppingDownSelectedCallback(new AllShoppingDownHo.AllShoppingDownSelectedCallback() {
+        allStoreDownHo = new AllStoreDownHo(getContext());
+        allStoreFilter = allStoreDownHo.getAllStoreFilter(sortWindowBean);
+        allStoreDownHo.setStoreDownSelectedCallback(new AllStoreDownHo.AllStoreDownSelectedCallback() {
             @Override
             public void callback(List<Object> selectedItems) {
-                sortBarItemOnClick.selectedItemCallback(allShoppingDownHo.getSelectedItems(), 0);
+                sortBarItemOnClick.selectedItemCallback(allStoreDownHo.getSelectedItems(), 0);
             }
         });
 
         // 悬浮框内容：全部分类
         allSortDownHo = new AllSortDownHo(getContext());
-        allSortFilter = allSortDownHo.getAllSortFilter(sortDownBean);
+        allSortFilter = allSortDownHo.getAllSortFilter(sortWindowBean);
         allSortDownHo.setAllSortDownSelectedCallback(new AllSortDownHo.AllSortDownSelectedCallback() {
             @Override
             public void callback(List<Object> selectedItems) {
@@ -127,7 +128,7 @@ public class SortListDownBarHo extends BaseView {
 
         // 悬浮框内容：推荐排序
         recommendSortDownHo = new RecommendSortDownHo(getContext());
-        recommendSortFilter = recommendSortDownHo.getRecommendSortFilter(sortDownBean);
+        recommendSortFilter = recommendSortDownHo.getRecommendSortFilter(sortWindowBean);
         recommendSortDownHo.setRecommendSortSelectedCallback(new RecommendSortDownHo.RecommendSortSelectedCallback() {
             @Override
             public void callback(List<Object> selectedItems) {
@@ -160,7 +161,7 @@ public class SortListDownBarHo extends BaseView {
             private void useFilter(Object tag) {
                 switch (tag.toString()) {
                     case "0":
-                        bottomWindow.insertViewLayout(allShoppingFilter);
+                        bottomWindow.insertViewLayout(allStoreFilter);
                         break;
                     case "1":
                         bottomWindow.insertViewLayout(allSortFilter);

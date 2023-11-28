@@ -4,21 +4,21 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class SortDownBean {
+public class SortWindowBean {
 
-    @SerializedName("all_shopping_list")
-    private List<AllShoppingListDTO> allShoppingList;
+    @SerializedName("all_store_list")
+    private List<AllStoreListDTO> allStoreList;
     @SerializedName("all_sort_list")
     private List<AllSortListDTO> allSortList;
     @SerializedName("recommend_sort_list")
     private List<RecommendSortListDTO> recommendSortList;
 
-    public List<AllShoppingListDTO> getAllShoppingList() {
-        return allShoppingList;
+    public List<AllStoreListDTO> getAllStoreList() {
+        return allStoreList;
     }
 
-    public void setAllShoppingList(List<AllShoppingListDTO> allShoppingList) {
-        this.allShoppingList = allShoppingList;
+    public void setAllStoreList(List<AllStoreListDTO> allStoreList) {
+        this.allStoreList = allStoreList;
     }
 
     public List<AllSortListDTO> getAllSortList() {
@@ -37,71 +37,71 @@ public class SortDownBean {
         this.recommendSortList = recommendSortList;
     }
 
-    public static class AllShoppingListDTO {
-        @SerializedName("all_shopping_id")
-        private Integer allShoppingId;
-        @SerializedName("all_shopping_title")
-        private String allShoppingTitle;
-        @SerializedName("all_shopping_child")
-        private List<AllShoppingChildDTO> allShoppingChild;
+    public static class AllStoreListDTO {
+        @SerializedName("all_store_id")
+        private Integer allStoreId;
+        @SerializedName("all_store_title")
+        private String allStoreTitle;
+        @SerializedName("all_store_child")
+        private List<AllStoreChildDTO> allStoreChild;
 
-        public Integer getAllShoppingId() {
-            return allShoppingId;
+        public Integer getAllStoreId() {
+            return allStoreId;
         }
 
-        public void setAllShoppingId(Integer allShoppingId) {
-            this.allShoppingId = allShoppingId;
+        public void setAllStoreId(Integer allStoreId) {
+            this.allStoreId = allStoreId;
         }
 
-        public String getAllShoppingTitle() {
-            return allShoppingTitle;
+        public String getAllStoreTitle() {
+            return allStoreTitle;
         }
 
-        public void setAllShoppingTitle(String allShoppingTitle) {
-            this.allShoppingTitle = allShoppingTitle;
+        public void setAllStoreTitle(String allStoreTitle) {
+            this.allStoreTitle = allStoreTitle;
         }
 
-        public List<AllShoppingChildDTO> getAllShoppingChild() {
-            return allShoppingChild;
+        public List<AllStoreChildDTO> getAllStoreChild() {
+            return allStoreChild;
         }
 
-        public void setAllShoppingChild(List<AllShoppingChildDTO> allShoppingChild) {
-            this.allShoppingChild = allShoppingChild;
+        public void setAllStoreChild(List<AllStoreChildDTO> allStoreChild) {
+            this.allStoreChild = allStoreChild;
         }
 
-        public static class AllShoppingChildDTO {
-            @SerializedName("all_shopping_child_id")
-            private Integer allShoppingChildId;
-            @SerializedName("all_shopping_child_title")
-            private String allShoppingChildTitle;
-            @SerializedName("all_shopping_child_detail")
-            private List<AllShoppingChildDetailDTO> allShoppingChildDetail;
+        public static class AllStoreChildDTO {
+            @SerializedName("all_store_child_id")
+            private Integer allStoreChildId;
+            @SerializedName("all_store_child_title")
+            private String allStoreChildTitle;
+            @SerializedName("all_store_child_detail")
+            private List<AllStoreChildDetailDTO> allStoreChildDetail;
 
-            public Integer getAllShoppingChildId() {
-                return allShoppingChildId;
+            public Integer getAllStoreChildId() {
+                return allStoreChildId;
             }
 
-            public void setAllShoppingChildId(Integer allShoppingChildId) {
-                this.allShoppingChildId = allShoppingChildId;
+            public void setAllStoreChildId(Integer allStoreChildId) {
+                this.allStoreChildId = allStoreChildId;
             }
 
-            public String getAllShoppingChildTitle() {
-                return allShoppingChildTitle;
+            public String getAllStoreChildTitle() {
+                return allStoreChildTitle;
             }
 
-            public void setAllShoppingChildTitle(String allShoppingChildTitle) {
-                this.allShoppingChildTitle = allShoppingChildTitle;
+            public void setAllStoreChildTitle(String allStoreChildTitle) {
+                this.allStoreChildTitle = allStoreChildTitle;
             }
 
-            public List<AllShoppingChildDetailDTO> getAllShoppingChildDetail() {
-                return allShoppingChildDetail;
+            public List<AllStoreChildDetailDTO> getAllStoreChildDetail() {
+                return allStoreChildDetail;
             }
 
-            public void setAllShoppingChildDetail(List<AllShoppingChildDetailDTO> allShoppingChildDetail) {
-                this.allShoppingChildDetail = allShoppingChildDetail;
+            public void setAllStoreChildDetail(List<AllStoreChildDetailDTO> allStoreChildDetail) {
+                this.allStoreChildDetail = allStoreChildDetail;
             }
 
-            public static class AllShoppingChildDetailDTO {
+            public static class AllStoreChildDetailDTO {
                 @SerializedName("location_id")
                 private Integer locationId;
                 @SerializedName("location_distance")

@@ -2,7 +2,6 @@ package com.example.myapplication.ui.activity;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
@@ -10,10 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.adapter.SortChildPageAdapter;
-import com.example.myapplication.bean.SortDownBean;
+import com.example.myapplication.bean.SortWindowBean;
 import com.example.myapplication.databinding.ActivitySortListBinding;
 import com.example.myapplication.ext.ViewPager2HelperEx;
-import com.example.myapplication.ui.fragment.sort.AllShoppingFragment;
+import com.example.myapplication.ui.fragment.sort.AllStoreFragment;
 import com.example.myapplication.ui.fragment.sort.AllSortFragment;
 import com.example.myapplication.ui.fragment.sort.RecommendSortFragment;
 import com.example.myapplication.ui.widget.SortListDownBarHo;
@@ -28,7 +27,7 @@ public class SortListActivity extends AppCompatActivity {
 
     private List<String> tabs = new ArrayList<String>(Arrays.asList("全部商区", "全部分类", "推荐排序"));
 
-    private SortDownBean sortDownBean;
+    private SortWindowBean sortWindowBean;
 
     private ActivitySortListBinding binding;
 
@@ -68,28 +67,28 @@ public class SortListActivity extends AppCompatActivity {
             public void selectedItemCallback(List<Object> selectedItems, int index) {
                 switch (index) {
                     case 0:
-                        AllShoppingFragment allShoppingFragment = (AllShoppingFragment) fragments.get(0);
-                        allShoppingFragment.post(selectedItems);
+                        AllStoreFragment allStoreFragment = (AllStoreFragment) fragments.get(0);
+                        allStoreFragment.updateList(selectedItems);
                         break;
                     case 1:
                         AllSortFragment allSortFragment = (AllSortFragment) fragments.get(1);
-                        allSortFragment.post(selectedItems);
+                        allSortFragment.updateList(selectedItems);
                         break;
                     case 2:
                         RecommendSortFragment recommendSortFragment = (RecommendSortFragment) fragments.get(2);
-                        recommendSortFragment.post(selectedItems);
+                        recommendSortFragment.updateList(selectedItems);
                         break;
                 }
             }
         });
 
-        sortListDownBarHo.setSortDownBean(sortDownBean);
+        sortListDownBarHo.setSortDownBean(sortWindowBean);
 
         // 禁止滑动
         binding.sortListView.setUserInputEnabled(false);
 
         fragments = new ArrayList<>();
-        fragments.add(new AllShoppingFragment());
+        fragments.add(new AllStoreFragment());
         fragments.add(new AllSortFragment());
         fragments.add(new RecommendSortFragment());
 
@@ -110,8 +109,12 @@ public class SortListActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        String json = ReadAssertJson.redJson("home_sort_down_data.json", this);
-        sortDownBean = new Gson().fromJson(json, SortDownBean.class);
+        String json = ReadAssertJson.redJson("sort_down_data.json", this);
+        sortWindowBean = new Gson().fromJson(json, SortWindowBean.class);
+    }
+
+    public interface OptionCallback {
+        void updateList(List<Object> params);
     }
 
 }

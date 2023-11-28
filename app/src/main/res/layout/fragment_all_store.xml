@@ -5,7 +5,7 @@
     android:background="@color/color_F5F6F7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.sort.AllShoppingFragment">
+    tools:context=".ui.fragment.sort.AllStoreFragment">
 
     <TextView
         android:id="@+id/all_shopping_txt"
